@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ваш Дім — Товари</title>
+  <link rel="icon" type="image/png" href="logo.png">
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Клея — Ваш Дім</title>
+  <style>
+    /* База */
+    body{font-family:Arial, sans-serif; margin:0; background:#fff; color:#333;}
+
+    /* Шапка як на ОСБ */
+    header{
+      background:linear-gradient(90deg,#ffe0b3 0%,#f7931e 40%,#8cc63f 100%);
+      padding:10px 20px; display:flex; align-items:center; gap:14px;
+      box-shadow:0 2px 5px rgba(0,0,0,.2);
+    }
+    header img{height:70px; border-radius:10px; padding:5px;
+      background:linear-gradient(90deg,#fff 0%,#f7931e 100%);}
+    header h1{color:#fff; font-size:32px; margin:0;
+      text-shadow:1px 1px 3px rgba(0,0,0,.6);}
+    nav{margin-left:auto; display:flex; gap:25px;}
+    nav a{color:#fff; text-decoration:none; font-weight:bold; font-size:20px; transition:.3s;}
+    nav a:hover{text-decoration:underline; color:#ffeabf;}
+
+    /* Контент */
+    .content{max-width:1100px; margin:40px auto; padding:0 20px; text-align:center;}
+    .content h1{font-size:28px; color:#111; margin-bottom:6px;}
+    .hotline{font-weight:700; font-size:20px; color:#111; margin-bottom:20px;}
+    .hotline a{color:inherit; text-decoration:none;}
+    .hotline a:hover{text-decoration:underline;}
+
+    /* Фото + ціни поруч */
+    .top-block{display:flex; justify-content:center; align-items:flex-start; gap:40px; flex-wrap:wrap;}
+    .prices{flex:1 1 350px; text-align:left;}
+    .prices h3{color:#f7931e; margin:0 0 14px; font-size:24px;}
+    .price-table{width:100%; border-collapse:collapse; margin-bottom:10px;}
+    .price-table th, .price-table td{padding:10px; border:1px solid #ccc;}
+    .price-table thead th{background:#f7931e; color:#fff;}
+    .price{color:#008c45; font-weight:700;}
+
+    .photo{flex:1 1 350px; text-align:right;}
+    .photo img{width:100%; max-width:420px; height:auto; border-radius:12px; transform:scale(1.5); margin-top:120px;
+      box-shadow:0 4px 12px rgba(0,0,0,.08);}
+
+    /* Опис / технічна інформація */
+    .info-block{
+      max-width:900px; margin:40px auto; padding:20px;
+      background:rgba(255,255,255,.9); border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,.1); text-align:left;
+    }
+    .info-block h3{color:#f7931e; text-align:center; margin:0 0 16px;}
+    .info-block h4{margin:16px 0 8px;}
+    .info-block ul{padding-left:18px; margin:6px 0;}
+    .info-block li{margin-bottom:6px;}
+    .spec-table{width:100%; border-collapse:collapse; margin:10px 0 20px;}
+    .spec-table th, .spec-table td{padding:8px; border:1px solid #ccc;}
+    .spec-table thead th{background:#f7931e; color:#fff;}
+
+    footer{display:none;}
+
+    @media (max-width:800px){
+      .top-block{flex-direction:column-reverse; align-items:center;}
+      .prices{text-align:center;}
+      .photo{text-align:center;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Логотип 'Ваш Дім'">
+    <h1>Ваш Дім</h1>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="tovary.html">Товари</a>
+      <a href="kontakty.html">Контакти</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h1>Клея</h1>
+    <div class="hotline">Телефон для замовлень: <a href="tel:+380965588197">096-55-88-197</a></div>
+
+    <div class="top-block">
+      <!-- Ліворуч — ціни -->
+      <div class="prices">
+        <h3>Ціни</h3>
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Назва продукту</th>
+              <th>Опис / Застосування</th>
+              <th>Ціна</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Клей для плитки</strong></td>
+              <td>Розмір плитки до 600×600 мм</td>
+              <td class="price">180 грн</td>
+            </tr>
+            <tr>
+              <td><strong>Клей для плитки (тепла підлога)</strong></td>
+              <td>Еластичний клей для систем з підігрівом</td>
+              <td class="price">320 грн</td>
+            </tr>
+            <tr>
+              <td><strong>Клей для плитки</strong></td>
+              <td>Розмір плитки до 1000×1000 мм</td>
+              <td class="price">580 грн</td>
+            </tr>
+            <tr>
+              <td><strong>Клей для широкоформатної плитки</strong></td>
+              <td>Підвищена еластичність (формати &gt; 1500×100 мм)</td>
+              <td align="center">Уточнюйте</td>
+            </tr>
+            <tr>
+              <td><strong>Клей для приклейки</strong></td>
+              <td>Пінопласт, мінеральна вата, системи утеплення</td>
+              <td class="price">150 грн</td>
+            </tr>
+            <tr>
+              <td><strong>Клей для затяжки</strong></td>
+              <td>Армування сітки у фасадних системах</td>
+              <td class="price">185 грн</td>
+            </tr>
+            <tr>
+              <td><strong>Клей для газоблоку</strong></td>
+              <td>Тонкошаровий, товщина шва 2–3 мм</td>
+              <td class="price">165 грн</td>
+            </tr>
+            <tr>
+              <td><strong>Стяжка</strong></td>
+              <td>Цементно-піщана суміш для підлоги</td>
+              <td class="price">150 грн</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Праворуч — фото (квадратний колаж з 10 позицій) -->
+      <div class="photo">
+        <!-- завантаж свою картинку у папку images з назвою "klej vsi.jpg" -->
+        <img src="images/klej%20vsi.jpg" alt="Клеї (плитка, пінопласт, праймери)">
+      </div>
+    </div>
+  </div>
+
+  <!-- Опис і технічна інформація -->
+  <section class="info-block">
+    <h3>Клей для плитки та пінопласту — технічна інформація</h3>
+
+    <h4>1️⃣ Клей для плитки</h4>
+    <p><strong>Опис:</strong> цементна клейова суміш для керамічної/керамогранітної плитки, мозаїки, натурального каменю.
+    Сумісний з системами «тепла підлога» (еластичні марки C2TE S1).</p>
+
+    <table class="spec-table">
+      <thead><tr><th>Параметр</th><th>Значення</th></tr></thead>
+      <tbody>
+        <tr><td>Тип</td><td>Цементний, модифікований полімером (C1/C2, TE, S1 залежно від марки)</td></tr>
+        <tr><td>Товщина шару</td><td>2–10 мм (оптимально 4–6 мм)</td></tr>
+        <tr><td>Розмір плитки</td><td>до 600×600 мм — стандарт; великі формати — C2TE S1</td></tr>
+        <tr><td>Розхід</td><td>2,5–4,5 кг/м² при шарі 3–4 мм (залежить від рівності основи і гребінки)</td></tr>
+        <tr><td>Адгезія</td><td>≥1,0 МПа (C2) / ≥0,5 МПа (C1)</td></tr>
+        <tr><td>Температура нанесення</td><td>+5…+30 °C</td></tr>
+        <tr><td>Час корекції</td><td>до 10–15 хв</td></tr>
+        <tr><td>Придатність розчину</td><td>~3–4 години</td></tr>
+        <tr><td>Ходіння</td><td>через ~24 години</td></tr>
+        <tr><td>Фасування</td><td>25 кг</td></tr>
+      </tbody>
+    </table>
+
+    <ul>
+      <li>Для форматів &gt; 60×60 см — двостороннє нанесення (на основу і на плитку).</li>
+      <li>На теплих підлогах застосовувати еластичні клеї (S1).</li>
+      <li>Обов’язково ґрунтувати основу (наприклад, Ceresit CT17, Knauf Tiefengrund).</li>
+    </ul>
+
+    <hr>
+
+    <h4>2️⃣ Клей для пінопласту / XPS</h4>
+    <p><strong>Опис:</strong> цементна полімермодифікована суміш для приклеювання плит EPS/XPS та виконання армувального шару
+    з лугостійкою сіткою у системах утеплення.</p>
+
+    <table class="spec-table">
+      <thead><tr><th>Параметр</th><th>Значення</th></tr></thead>
+      <tbody>
+        <tr><td>Розхід при приклеюванні</td><td>4–6 кг/м² (рамка + “плями”/гребінка 10–12 мм)</td></tr>
+        <tr><td>Розхід при армуванні</td><td>3–4 кг/м² (сітка 145–160 г/м²)</td></tr>
+        <tr><td>Адгезія до EPS/XPS</td><td>≥0,08 МПа</td></tr>
+        <tr><td>Адгезія до мінеральних основ</td><td>≥0,25 МПа</td></tr>
+        <tr><td>Температура застосування</td><td>+5…+30 °C</td></tr>
+        <tr><td>Фасування</td><td>25 кг</td></tr>
+      </tbody>
+    </table>
+
+    <ul>
+      <li>Основа має бути міцною, чистою, загрунтованою.</li>
+      <li>Через 3–5 діб після приклеювання виконуйте армування сіткою.</li>
+    </ul>
+  </section>
+
+  <footer></footer>
+</body>
+</html>

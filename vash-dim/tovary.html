@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="uk">
+<head>
+
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ваш Дім — Товари</title>
+  <link rel="icon" type="image/png" href="logo.png">
+
+
+
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ваш Дім — Товари</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    /* 🔸 ОНОВЛЕНА ШАПКА (як у сторінці ОСБ) */
+    header {
+      background: linear-gradient(90deg,#ffe0b3 0%,#f7931e 40%,#8cc63f 100%);
+      padding:10px 20px;
+      display:flex;
+      align-items:center;
+      gap:14px;
+      box-shadow:0 2px 5px rgba(0,0,0,.2);
+    }
+    header img {
+      height:70px;
+      border-radius:10px;
+      padding:5px;
+      background:linear-gradient(90deg,#fff 0%,#f7931e 100%);
+    }
+    header h1 {
+      color:#fff;
+      font-size:32px;
+      margin:0;
+      text-shadow:1px 1px 3px rgba(0,0,0,.6);
+    }
+    nav {
+      margin-left:auto;
+      display:flex;
+      gap:25px;
+    }
+    nav a {
+      color:#fff;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:20px;
+      transition:.3s;
+    }
+    nav a:hover {
+      text-decoration:underline;
+      color:#ffeabf;
+    }
+
+    /* --- Далі весь старий код без змін --- */
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #f7931e;
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      text-align: center;
+      padding: 15px;
+      background-color: #fafafa;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      background-color: #eee;
+    }
+    .card h3 {
+      color: #8cc63f;
+      margin: 10px 0 5px;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Логотип 'Ваш Дім'">
+    <h1>Ваш Дім</h1>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="tovary.html">Товари</a>
+      <a href="kontakty.html">Контакти</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Наші товари</h2>
+    <div class="grid">
+
+      <a href="shtukaturka.html" class="card">
+        <img src="images/shtukaturka.jpg" alt="Штукатурка">
+        <h3>Штукатурка, стяжка</h3>
+        <p>Якісні сухі суміші для внутрішніх та зовнішніх робіт.</p>
+      </a>
+
+      <a href="shpaklivka.html" class="card">
+        <img src="images/shpaklivka.jpg" alt="Шпаклівка">
+        <h3>Шпаклівка</h3>
+        <p>Фінішна, стартова, універсальна — для ідеальних стін.</p>
+      </a>
+
+      <a href="kleya.html" class="card">
+        <img src="images/klej.jpg" alt="Клеї">
+        <h3>Клеї</h3>
+        <p>Для плитки, пінопласту, гіпсокартону та інших матеріалів.</p>
+      </a>
+
+      <a href="gipsokarton.html" class="card">
+        <img src="images/gipsokarton.jpg" alt="Гіпсокартон">
+        <h3>Гіпсокартон</h3>
+        <p>Аркуші різних розмірів для стін і стель.</p>
+      </a>
+
+      <a href="profil.html" class="card">
+        <img src="images/profil.jpg" alt="Профіль">
+        <h3>Профіль до гіпсокартону</h3>
+        <p>Металеві профілі UD, CD, CW, UW кутики та аксесуари.</p>
+      </a>
+
+      <a href="eps.html" class="card">
+        <img src="images/eps.jpg" alt="Екструдований пінополістирол">
+        <h3>Екструдований пінополістирол</h3>
+        <p>Теплоізоляція для фундаменту, фасаду та підлоги.</p>
+      </a>
+
+      <a href="pinoplast.html" class="card">
+        <img src="images/pinoplast.jpg" alt="Пінопласт">
+        <h3>Пінопласт</h3>
+        <p>Універсальний матеріал для утеплення будинку.</p>
+      </a>
+
+      <a href="vata.html" class="card">
+        <img src="images/vata.jpg" alt="Вата">
+        <h3>Вата</h3>
+        <p>Мінеральна, базальтова або скловата для теплоізоляції.</p>
+      </a>
+
+      <a href="osb.html" class="card">
+        <img src="images/osb.jpg" alt="ОСБ">
+        <h3>ОСБ</h3>
+        <p>Плити різної товщини для підлоги, стін і покрівлі.</p>
+      </a>
+
+      <a href="stelya.html" class="card">
+        <img src="images/stelya.jpg" alt="Підвісна стеля">
+        <h3>Підвісна стеля</h3>
+        <p>Панелі, рейки та комплектуючі для офісів і житла.</p>
+      </a>
+
+      <a href="hydro.html" class="card">
+        <img src="images/hydro.jpg" alt="Гідроізоляція для фундаменту">
+        <h3>Гідроізоляція для фундаменту</h3>
+        <p>Матеріали для надійного захисту від вологи.</p>
+      </a>
+
+      <a href="fasad.html" class="card">
+        <img src="images/fasad.jpg" alt="Фасад">
+        <h3>Фасад</h3>
+        <p>Системи утеплення, декоративні штукатурки та фарби.</p>
+      </a>
+
+    </div>
+  </main>
+</body>
+</html>
