@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Мінеральна вата — Ваш Дім</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #333; }
+
+    /* Шапка (як на ОСБ) */
+    header{
+      background: linear-gradient(90deg,#ffe0b3 0%,#f7931e 40%,#8cc63f 100%);
+      padding:10px 20px; display:flex; align-items:center; gap:14px;
+      box-shadow:0 2px 5px rgba(0,0,0,.2);
+    }
+    header img{ height:70px; border-radius:10px; padding:5px;
+      background:linear-gradient(90deg,#fff 0%,#f7931e 100%);}
+    header h1{ color:#fff; font-size:32px; margin:0; text-shadow:1px 1px 3px rgba(0,0,0,.6);}
+    nav{ margin-left:auto; display:flex; gap:25px; }
+    nav a{ color:#fff; text-decoration:none; font-weight:bold; font-size:20px; transition:.3s; }
+    nav a:hover{ text-decoration:underline; color:#ffeabf; }
+
+    /* Контент */
+    .content{ max-width:1100px; margin:40px auto; padding:0 20px; text-align:center; }
+    .content h1{ font-size:28px; color:#111; margin-bottom:6px; }
+    .hotline{ font-weight:700; font-size:20px; color:#111; margin-bottom:20px; }
+    .hotline a{ color:inherit; text-decoration:none; }
+    .hotline a:hover{ text-decoration:underline; }
+
+    /* Фото та ціни поруч */
+    .top-block{ display:flex; justify-content:center; align-items:flex-start; gap:40px; flex-wrap:wrap; }
+    .prices{ flex:1 1 420px; text-align:left; }
+    .prices h3{ color:#f7931e; margin:0 0 14px; font-size:24px; }
+
+    table{ width:100%; border-collapse:collapse; margin:10px 0 18px; box-shadow:0 2px 10px rgba(0,0,0,.04);}
+    th,td{ padding:10px; border:1px solid #ddd; }
+    th{ background:#f7931e; color:#fff; }
+    .price-val{ color:#008c45; font-weight:700; }
+
+    .brands{ font-size:14px; color:#555; margin:6px 0 16px; }
+
+    .photo{ flex:1 1 350px; text-align:right; }
+    .photo img{
+      width:100%; max-width:420px; height:auto; border-radius:12px;
+      box-shadow:0 4px 12px rgba(0,0,0,.08);
+    }
+
+    /* Опис / технічні блоки */
+    .info-block{
+      max-width:900px; margin:40px auto; padding:20px;
+      background:rgba(255,255,255,.9); border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,.1); text-align:left;
+    }
+    .info-block h3{ color:#f7931e; text-align:center; margin:0 0 16px; }
+    .info-block h4{ margin:16px 0 8px; }
+    .info-block ul{ padding-left:18px; margin:6px 0; }
+    .info-note{ font-size:13px; color:#666; margin-top:6px; }
+
+    footer{ display:none; }
+
+    @media (max-width:800px){
+      .top-block{ flex-direction:column-reverse; align-items:center; }
+      .prices{text-align:center;}
+      .photo{text-align:center;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Логотип 'Ваш Дім'">
+    <h1>Ваш Дім</h1>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="tovary.html">Товари</a>
+      <a href="kontakty.html">Контакти</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h1>Мінеральна вата (скловата та базальтова)</h1>
+    <div class="hotline">Телефон для замовлень: <a href="tel:+380965588197">096-55-88-197</a></div>
+
+    <div class="top-block">
+      <!-- Ліворуч — ціни -->
+      <div class="prices">
+        <h3>Ціни</h3>
+        <div class="brands">Бренди: <strong>Knauf</strong>, <strong>Isover</strong>, <strong>Izovat</strong>, <strong>Sweetondale</strong></div>
+
+        <!-- Скловата -->
+        <table>
+          <tr>
+            <th>Скловата (рулони)</th>
+            <th>Товщина</th>
+            <th>Упаковка</th>
+            <th>Ціна</th>
+          </tr>
+          <tr>
+            <td>Скловата</td>
+            <td>50 мм</td>
+            <td>12–20 м²</td>
+            <td class="price-val">54,00 грн/м²</td>
+          </tr>
+          <tr>
+            <td>Скловата</td>
+            <td>100 мм</td>
+            <td>6–12 м²</td>
+            <td class="price-val">Уточнюйте</td>
+          </tr>
+        </table>
+
+        <!-- Базальтова вата -->
+        <table>
+          <tr>
+            <th>Базальтова вата (плити)</th>
+            <th>Товщина</th>
+            <th>В упаковці</th>
+            <th>Ціна</th>
+          </tr>
+          <tr>
+            <td>Базальтова вата</td>
+            <td>50 мм</td>
+            <td>5,76 м²</td>
+            <td class="price-val">77,00 грн/м²</td>
+          </tr>
+          <tr>
+            <td>Базальтова вата</td>
+            <td>100 мм</td>
+            <td>2,88 м²</td>
+            <td class="price-val">154,00 грн/м²</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Праворуч — фото -->
+      <div class="photo">
+        <img src="images/vata.jpg" alt="Вата — скловата та базальтова">
+      </div>
+    </div>
+  </div>
+
+  <!-- Опис і характеристики -->
+  <section class="info-block">
+    <h3>Опис і характеристики</h3>
+
+    <h4>Що це таке</h4>
+    <ul>
+      <li><strong>Скловата (glass wool)</strong> — волокна з переробленого скла/піску, зв’язані смолами. Легка, еластична; частіше у рулонах і м’яких плитах.</li>
+      <li><strong>Базальтова (каменна) вата</strong> — волокна з гірських порід (базальт, діабаз). Жорсткіша, точна геометрія; здебільшого у плитах різної щільності (в т.ч. фасадних).</li>
+    </ul>
+
+    <h4>Технічні характеристики (типові діапазони)</h4>
+    <table>
+      <tr><th>Параметр</th><th>Скловата</th><th>Базальтова вата</th></tr>
+      <tr><td>Теплопровідність λ, Вт/м·К</td><td>~0,032–0,042</td><td>~0,033–0,040</td></tr>
+      <tr><td>Густина, кг/м³</td><td>10–35 (рулони), 15–50 (плити)</td><td>30–90 (універсальні), 120–180 (фасадні)</td></tr>
+      <tr><td>Вогнестійкість (клас)</td><td>A1 (негорюча)</td><td>A1 (негорюча)</td></tr>
+      <tr><td>Водопоглинання (об’ємне)</td><td>≤ 1 % (гідрофобізована)</td><td>≤ 1 % (гідрофобізована)</td></tr>
+      <tr><td>Паропроникність</td><td>~0,3 мг/(м·год·Па)</td><td>~0,3 мг/(м·год·Па)</td></tr>
+      <tr><td>Робоча температура</td><td>–50…+250 °C</td><td>–50…+600(–700) °C</td></tr>
+      <tr><td>Звукопоглинання (NRC)</td><td>0,7–1,0</td><td>0,8–1,0</td></tr>
+    </table>
+    <div class="info-note">*Точні значення залежать від бренду/серії.</div>
+
+    <h4>Форм-фактори та розміри</h4>
+    <ul>
+      <li><strong>Рулони (здебільшого скловата):</strong> ширина 600/1200 мм; товщина 50, 100, 150, 200 мм; довжина 5–18 м.</li>
+      <li><strong>Плити (скло- та базальтовата):</strong> 1200×600 мм (типово), інколи 1000×600 мм; товщина 25–200 мм; від м’яких до жорстких.</li>
+      <li><strong>Облицювання:</strong> без покриття; алюмінієва фольга; склохолст; крафт-папір.</li>
+    </ul>
+
+    <h4>Де застосовують</h4>
+    <ul>
+      <li>Мансарди/скати: рулони або м’які плити між кроквами.</li>
+      <li>Перегородки, облицювання стін: плити 30–75 кг/м³ (акустика+тепло).</li>
+      <li>Вентильовані фасади: жорсткі плити 80–150 кг/м³ + вітрозахист.</li>
+      <li>«Мокрі» фасади (ETICS): фасадні плити 120–180 кг/м³ під армування та штукатурку.</li>
+      <li>Підлоги/перекриття: плити середньої/вищої щільності під стяжку.</li>
+      <li>Технічна ізоляція: базальтова вата завдяки високій термостійкості.</li>
+    </ul>
+
+    <h4>Поради з монтажу</h4>
+    <ul>
+      <li>Паробар’єр з теплого боку, вітро-/гідрозахист — з холодного.</li>
+      <li>Матеріал не перетискати; робити «перерозмір» +10–15 мм для щільної посадки.</li>
+      <li>Для фасадів застосовувати сертифіковані системи (клей, дюбелі, армування).</li>
+      <li>ЗІЗ: рукавички, окуляри, респіратор.</li>
+    </ul>
+  </section>
+
+  <footer></footer>
+</body>
+</html>
