@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Мінеральна вата — Ваш Дім</title>
@@ -63,6 +68,70 @@
       .prices{text-align:center;}
       .photo{text-align:center;}
     }
+
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 10px;
+  }
+
+  header img {
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 8px;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  .content {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .top-block {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .photo img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  table, .price-table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .price-table th, .price-table td {
+    padding: 8px;
+  }
+
+  .info-block {
+    padding: 15px;
+    font-size: 15px;
+  }
+}
+
+
+
+
+    
   </style>
 </head>
 <body>
@@ -189,4 +258,5 @@
 
   <footer></footer>
 </body>
+
 </html>
