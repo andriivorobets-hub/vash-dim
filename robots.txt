@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /images/
+Disallow: /temp/
+Allow: /
+
+# Основна карта сайту
+Sitemap: http://vashdim-bud.com.ua/sitemap.xml
+
+# Інформація для пошукових систем
+Host: vashdim-bud.com.ua
+
+# Додаткові рекомендації
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: *
+Crawl-delay: 10
