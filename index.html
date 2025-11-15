@@ -27,48 +27,53 @@
     }
 
     /* Шапка */
-    header {
-      background: linear-gradient(90deg, #ffe0b3 0%, #f7931e 40%, #8cc63f 100%);
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
+  header {
+  background: linear-gradient(90deg, #ffe0b3 0%, #f7931e 40%, #8cc63f 100%);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 
-    header img {
-      height: 70px;
-      margin-right: 15px;
-      border-radius: 10px;
-      padding: 5px;
-      background: linear-gradient(90deg, #fff 0%, #f7931e 100%);
-    }
+/* логотип + текст */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
-    header h1 {
-      color: #1c7a28; /* «Ваш Дім» — білим */
-      font-size: 32px;
-      margin: 0;
-      text-shadow: none;
-    }
+header img {
+  height: 70px;
+  border-radius: 10px;
+  padding: 5px;
+  background: linear-gradient(90deg, #fff 0%, #f7931e 100%);
+}
 
-    /* Навігація */
-    nav {
-      margin-left: auto;
-    }
+header h1 {
+  color: #1c7a28;  /* зелений напис "Ваш Дім" */
+  font-size: 32px;
+  margin: 0;
+}
 
-    nav a {
-      color: #333333;
-      text-decoration: none;
-      margin-left: 25px;
-      font-weight: bold;
-      font-size: 20px;
-      transition: 0.3s;
-    }
+/* меню справа */
+nav {
+  margin-left: auto;
+  display: flex;
+  gap: 25px;
+}
 
-    nav a:hover {
-      text-decoration: underline;
-      color: #006400;
-    }
+nav a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.3s;
+}
 
+nav a:hover {
+  text-decoration: underline;
+  color: #006400;
+}
     /* Основний блок */
     main {
       max-width: 900px;
@@ -117,47 +122,46 @@
 
 @media (max-width: 800px) {
 
-  /* 🔹 Шапка — логотип + текст в один ряд */
+  /* шапка дозволяє перенос у 2 рядки */
   header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 10px 12px;
   }
 
-  /* 🔹 Лівий блок: логотип + назва */
-  .logo-box {
+  /* перший рядок: логотип + "Ваш Дім" зліва */
+  .brand {
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 8px;
+    justify-content: flex-start;
+    margin-bottom: 4px;
   }
 
   header img {
-    height: 42px;
+    height: 46px;
   }
 
   header h1 {
-    font-size: 20px;
+    font-size: 22px;
     margin: 0;
     white-space: nowrap;
   }
 
-  /* 🔹 Меню переносимо під логотип і вирівнюємо рівномірно */
+  /* другий рядок: меню справа */
   nav {
     width: 100%;
+    margin-left: 0;
     display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
+    justify-content: flex-end;
+    gap: 18px;
   }
 
   nav a {
-    flex: 1;
-    text-align: center;
-    padding: 10px 0;
     font-size: 16px;
     white-space: nowrap;
   }
+
   /* решта твоїх мобільних стилів (.content, .top-block, таблиці тощо) залишаються як були */
 
   .content {
@@ -221,6 +225,7 @@
 </body>
 
 </html>
+
 
 
 
